@@ -65,7 +65,7 @@ function Library:CreateWindow(title, color)
 
     outlinecore.Name = "outlinecore"
     outlinecore.Parent = core
-    outlinecore.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+    outlinecore.BackgroundColor3 = Color3.fromRGB(61, 90, 225)
     outlinecore.BorderSizePixel = 0
     outlinecore.Position = UDim2.new(0, 1, 0, 1)
     outlinecore.Size = UDim2.new(0, 538, 0, 529)
@@ -85,7 +85,7 @@ function Library:CreateWindow(title, color)
 
     inline.Name = "inline"
     inline.Parent = outlinecore
-    inline.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+    inline.BackgroundColor3 = Color3.fromRGB(61, 90, 255)
     inline.BorderSizePixel = 0
     inline.Position = UDim2.new(0, 7, 0, 23)
     inline.Size = UDim2.new(0, 525, 0, 500)
