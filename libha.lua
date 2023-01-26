@@ -2706,8 +2706,8 @@ function library.createkeybind(default, parent, blacklist, flag, callback, offse
         end
     end)
 
-    utility.connect(services.InputService.InputBegan, function(input)
-        if not binding and (input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == key) or input.UserInputType == key then
+    utility.connect(services.InputService.InputBegan, function(input, gameprocess)
+        if not binding and (input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == key) or input.UserInputType == key and (not gameprocess) then
             callback(key)
         end
     end)
